@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Quiz Example</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+  <link rel="stylesheet" href="css/quiz.css">
+  <style>
+    #quiz {
+      height: 600px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="quiz"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="javascript/sweet-alert.min.js"></script>
+  <script src="javascript/quiz.js"></script>
+  <script>
+    $(function() {
+      alert('hola');
+      $('#quiz').quiz(
+        {
+  "questions": [
+    {
+      "answers": [
+        "a router",
+        "a firewall",
+        "a web server"
+      ],
+      "correct": {
+        "index": 0,
+        "text":"A router connects networks. Based on its current understanding of the state of the network it is connected to, a router acts as a dispatcher as it decides which way to send each information packet." 
+      },
+      "image": "img/img1.jpg",
+      "number": 1,
+      "prompt": "Which device performs the function of determining the path that messages should take through internetworks?"
+    },
+   {
+      "answers": [
+        "extranet",
+        "wireless LAN",
+        "intranet"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "A wireless LAN (or WLAN, for wireless local area network, sometimes referred to as LAWN, for local area wireless network) is one in which a mobile user can connect to a local area network (LAN) through a wireless (radio) connection." 
+      },
+      "image": "img/img2.jpg",
+      "number": 2,
+      "prompt": "Which area of the network would a college IT staff most likely have to redesign as a direct result of many students bringing their own tablets and smartphones to school to access school resources?"
+    },
+     {
+      "answers": [
+        "LAN",
+        "intranet",
+        "extranet",
+        "internet",
+      ],
+      "correct": {
+        "index": 3,
+        "text":"The Internet, sometimes called simply the Net, is a worldwide system of computer networks - a network of networks in which users at any one computer can, if they have permission, get information from any other computer"
+      },
+      "image": "img/img3.jpg",
+      "number": 3,
+      "prompt": " What type of network must a home user access in order to do online shopping?"
+    },
+   {
+      "answers": [
+       "convergence",
+       "congestion",
+       "optimization",
+       "synchronization"
+      ],
+      "correct": {
+        "index": 1,
+        "text": "Network congestion in data networking and queueing theory is the reduced quality of service that occurs when a network node is carrying more data than it can handle. Typical effects include queueing delay, packet loss or the blocking of new connections. A consequence of congestion is that an incremental increase in offered load leads either only to a small increase or even a decrease in network throughput."
+      },
+      "image": "img/img4.jpg",
+      "number": 4,
+      "prompt": "Which term describes the state of a network when the demand on the network resources exceeds the available capacity?"
+    },
+   {
+      "answers": [
+        "email",
+        "on-line purchasing",
+        "video conferencing"
+      ],
+      "correct": {
+        "index": 2,
+        "text": "A communications network forms the backbone of any successful organization. These networks transport a multitude of applications and data, including high-quality video and delay-sensitive data such as real-time voice. The bandwidth-intensive applications stretch network capabilities and resources, but also complement, add value, and enhance every business process. "
+      },
+      "image": "img/img5.jpg",
+      "number": 5,
+      "prompt": "What type of network traffic requires QoS?"
+    }
+  ],
+  "title": "Examen Redes 1",
+  "url": ""
+}
+      );
+
+    });
+    </script>
+</body>
+</html>
