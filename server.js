@@ -1,5 +1,6 @@
 const express = require('express');
 const hbs = require('hbs');
+const port = process.env.PORT || 3000;
 
 
 
@@ -15,6 +16,6 @@ app.get('/test', (req, res) => {
     res.render('index.hbs',{name: 'alan', age:'21'});
 });
 
-app.listen(3000, () => {
-  console.log('Escuchando en puerto 3000');
+app.listen(port, () => {
+  console.log('Escuchando en puerto', port);
 });
